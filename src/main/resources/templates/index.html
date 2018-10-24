@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<form action=# th:action="@{/display}"
+      th:object="${userobject}"
+      method="post">
+   [[${question1}]]:<input type="text" th:field="*{name}" /><br />
+   [[${question2}]]:<input type="text" th:field="*{quest}" /><br />
+   [[${question3}]]:<input type="text" name="question" /><br />
+   <img src="https://www.wikihow.com/images/b/b7/Draw-a-Knight-Step-19.jpg" alt="Knight Image" style="width: 200px;height: 400px">
+
+   <input type="submit" value="Answer" >
+
+</form>
+</body>
+</html>
